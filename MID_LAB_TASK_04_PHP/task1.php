@@ -1,38 +1,27 @@
-<?php
-$area=0;
-$perimeter=0;
-$len="";
-$wid="";
-if(isset($_POST["calcBtn"]))
-{
-    $len= $_POST["len"];
-    $wid= $_POST["wid"];
-    $area=$len*$wid;
-    $perimeter=2*($len+$wid);
-}
-?>
-<!doctype html>
-<html>
-    <head>
-        <title>Task 1</title>
-        <meta charset="utf-8">
-        <style>
-            label{
-                display: block;
-            }
-        </style>
-    </head>
-    <body>
-        <h2>Area: <?=$area?></h2>
-        <h2>Perimeter:<?=$perimeter?></h2>
-        <form action="" method="post">
-            <label for="len">Length:
-                <input type="text" name="len" value="<?=$len?>">
-            </label>
-            <label for="wid">Width:
-                <input type="text" name="wid" value="<?=$wid?>">
-            </label>
-            <button name="calcBtn" type="submit">Calculate</button>
-        </form>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        My first PHP page
+    </h1>
+    <?php
+    $txt = "Hello World";
+    $x=5;
+    $y=10.5;
+    //this is a comment 
+    #this is also a comment 
+    echo $txt;
+echo "<br>";
+echo $x;
+echo "<br>";
+echo $y;
+    
+     ?>
+</body>
 </html>
